@@ -16,20 +16,22 @@ Example using git 'git clone' https://github.com/rogertestevnt/bdd_capybara.git
 
 **data_table**: a data table was used in the specification in order to provide an example of what kind of data is considered valid
 
+If git is being used, issue: 'git checkout data_table'
+
 **data-from-json**: uses the original specification and uses a json as data source
 
 If git is being used, issue: 'git checkout data-from-json'
 
 ## Go to the project folder
-### Move to the folder named **bdd_capybara**
+Move to the folder named **bdd_capybara**
 
 ## Install the dependencies
-### Issue the command: 'bundle install'
+Issue the command: 'bundle install'
 
 ## Run the project
 
-### For running using Google Chrome, issue the command: 'cucumber -p default'
-### For running using Mozilla Firefox, issue the command: 'cucumber -p html'
+For running using Google Chrome, issue the command: 'cucumber -p default'
+For running using Mozilla Firefox, issue the command: 'cucumber -p html'
 
 A report named **features-report.html** will be available in the project's root folder at the end of each execution
 
