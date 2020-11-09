@@ -31,6 +31,7 @@ Issue the command: 'bundle install'
 ## Run the project
 
 For running using Google Chrome, issue the command: 'cucumber -p default'
+
 For running using Mozilla Firefox, issue the command: 'cucumber -p html'
 
 A report named **features-report.html** will be available in the project's root folder at the end of each execution
