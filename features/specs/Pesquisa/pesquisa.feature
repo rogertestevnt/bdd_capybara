@@ -12,9 +12,9 @@ Dado que eu acesse a página da VV Test
 E acesse o menu "Pesquisa - QA"
 Quando eu preencher todos os campos obrigatórios:
 
-| Nome        | Rogerio               |
-| Sobrenome   | de Oliveira           |
-| Email       | roger@email.co        |
+| Nome        | Pedro                 |
+| Sobrenome   | Pedra Pedreira        |
+| Email       | pedro@pedregulho.org  |
 | Linguagens  | Todas e mais um pouco |
 | Experiência | Menos de 5 anos       |
 | Interesse   | Sou mega chato        |

@@ -5,14 +5,11 @@ require_relative 'helper.rb'
       @pesquisa_page=PesquisaPage.new
    end
 
-
    After do |scenario|
-
     @helper = Helper.new
     @name = scenario.name.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/, '')
     @helper.take_screenshot(@name, 'screenshots/test_failed') if scenario.failed?
-    unless @helper.take_screenshot(@name, 'screenshots/test_passed')
-        
+    unless @helper.take_screenshot(@name, 'screenshots/test_passed')   
    end
 
 end
