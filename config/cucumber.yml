@@ -1,0 +1,4 @@
+# To define some customers formatters
+default: -p html -p chrome
+html: --format progress --format html --out=features-report.html --publish-quiet
+chrome: BROWSER=chrome
