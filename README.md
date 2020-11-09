@@ -6,13 +6,13 @@ For running the sample feature:
 Precondition: ruby must be installed in the system where the project will run. 
 Reference: https://www.ruby-lang.org/en/documentation/installation/
 
-1) Clone the project
+## Clone the project
 
 https://github.com/rogertestevnt/bdd_capybara.git
 
 Example using git 'git clone' https://github.com/rogertestevnt/bdd_capybara.git
 
-2) Checkout one of two following branches:
+## Checkout one of two following branches:
 
 **data_table**: a data table was used in the specification in order to provide an example of what kind of data is considered valid
 
@@ -20,14 +20,16 @@ Example using git 'git clone' https://github.com/rogertestevnt/bdd_capybara.git
 
 If git is being used, issue: 'git checkout data-from-json'
 
-3) Move to the folder named **bdd_capybara**
+## Go to the project folder
+### Move to the folder named **bdd_capybara**
 
-4) Issue the command: 'bundle install'
+## Install the dependencies
+### Issue the command: 'bundle install'
 
-5) Run the project
+## Run the project
 
-5.1) For running using Google Chrome, issue the command: 'cucumber -p default'
-5.2) For running using Mozilla Firefox, issue the command: 'cucumber -p html'
+### For running using Google Chrome, issue the command: 'cucumber -p default'
+### For running using Mozilla Firefox, issue the command: 'cucumber -p html'
 
 A report named **features-report.html** will be available in the project's root folder at the end of each execution
 
