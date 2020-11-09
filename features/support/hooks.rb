@@ -1,8 +1,17 @@
 require_relative 'helper.rb'
+require 'json'
 
    Before do
       @home_page = HomePage.new
+   end
+
+   # Below there is an example of a setup for running an specific tag
+   Before ('@pesquisa') do
       @pesquisa_page=PesquisaPage.new
+      # Using a json file as the data source for providing the info required for running the scenario
+      # This is a better approach instead of having hard coded data (unless the data comes from the feature specification)
+      file = File.read('./features/support/candidato.json')
+      @candidato = JSON.parse(file)
    end
 
 

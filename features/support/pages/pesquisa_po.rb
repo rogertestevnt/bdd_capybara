@@ -23,14 +23,14 @@ class PesquisaPage < SitePrism::Page
     element :carrier_aspiration_field, '#nf-field-15'
     
     def fill_mandatory_info(candidato)
-        fisrt_name_field.set candidato[:Nome]
-        last_name_field.set candidato[:Sobrenome]
-        email_field.set candidato[:Email]
-        confirm_email_field.set candidato[:Email]
-        programming_languages_field.set candidato[:Linguagens]
+        fisrt_name_field.set candidato['Nome']
+        last_name_field.set candidato['Sobrenome']
+        email_field.set candidato['Email']
+        confirm_email_field.set candidato['Email']
+        programming_languages_field.set candidato['Linguagens']
         radio_age_second_range.click
-        select_experience.select(candidato[:Experiência])
-        select_interest.select(candidato[:Interesse])
+        select_experience.select(candidato['Experiência'])
+        select_interest.select(candidato['Interesse'])
         improve_skill_radio_all.click
     end    
 

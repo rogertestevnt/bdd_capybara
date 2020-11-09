@@ -6,8 +6,7 @@ Dado('acesse o menu {string}') do |string|
   @home_page.link_qa.click
 end
 
-Quando('eu preencher todos os campos obrigatórios:') do |table|
-  @candidato=table.rows_hash
+Quando('eu preencher todos os campos obrigatórios') do
   @pesquisa_page.fill_mandatory_info(@candidato)
   @pesquisa_page.send_button.click
 end
