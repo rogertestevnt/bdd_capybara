@@ -51,7 +51,7 @@ class PesquisaPage < SitePrism::Page
         when "49+"
             radio_age_third_range.click
         else
-            "Incorrect option"
+            raise Exception.new "The following age interval was not found: " + age
         end 
     end
 
@@ -68,7 +68,7 @@ class PesquisaPage < SitePrism::Page
         when "Todas as anteriores"
             improve_skill_radio_all.click
         else
-            "Incorrect option"
+            raise Exception.new "The following skill was not found among the options: " + skill
         end 
     end
 

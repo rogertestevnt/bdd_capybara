@@ -18,7 +18,7 @@ class HomePage < SitePrism::Page
         when "BLOG"
             link_blog.click
         else
-            "Incorrect option"
+            raise Exception.new "The following link name was not found: " + link_name
         end
     end
 end
