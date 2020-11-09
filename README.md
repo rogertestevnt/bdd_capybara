@@ -1,9 +1,9 @@
 # bdd_capybara
 Code sample for web automation testing using cucumber, capybara and ruby
 
-For running the sample feature:
+Please follow the steps below for running the sample feature:
 
-Precondition: ruby must be installed in the system where the project will run. 
+**Precondition**: ruby must be installed in the system where the project will run. 
 Reference: https://www.ruby-lang.org/en/documentation/installation/
 
 ## Clone the project
