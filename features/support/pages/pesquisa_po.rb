@@ -6,6 +6,8 @@
 
 class PesquisaPage < SitePrism::Page
 
+    SUCCESS_MESSAGE = "Your form has been successfully submitted.".freeze
+
     # TODO: to include the other radios for skills to improve
     element :fisrt_name_field, '#nf-field-5'
     element :last_name_field, '#nf-field-6'
