@@ -18,5 +18,7 @@ Quando eu preencher todos os campos obrigatórios:
 | Linguagens  | Todas e mais um pouco |
 | Experiência | Menos de 5 anos       |
 | Interesse   | Sou mega chato        |
+| Idade       | 18-30                 |
+| Skill       | Todas as anteriores   |
 
 Então deve ser direcionado para uma página de sucesso

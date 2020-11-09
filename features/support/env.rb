@@ -9,8 +9,6 @@ Capybara.register_driver :selenium do |app|
   Capybara::Selenium::Driver.new(app, :browser => $browser)
 end
 
-# Capybara.javascript_driver = $browser
-
 Capybara.configure do |config|
     config.default_driver = :selenium
     config.app_host = 'http://www.lourencodemonaco.com.br/vvtest/'  

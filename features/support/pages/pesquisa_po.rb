@@ -18,6 +18,10 @@ class PesquisaPage < SitePrism::Page
     element :programming_languages_field, '#nf-field-14'
     element :select_experience, '#nf-field-11'
     element :select_interest, '#nf-field-12'
+    element :improve_skill_radio_tech, '#nf-label-class-field-13-0'
+    element :improve_skill_radio_business, '#nf-label-class-field-13-1'
+    element :improve_skill_radio_communication, '#nf-label-class-field-13-2'
+    element :improve_skill_radio_leadership, '#nf-label-class-field-13-3'
     element :improve_skill_radio_all, '#nf-label-class-field-13-4'
     element :send_button, '#nf-field-16'
     element :carrier_aspiration_field, '#nf-field-15'
@@ -28,10 +32,44 @@ class PesquisaPage < SitePrism::Page
         email_field.set candidato[:Email]
         confirm_email_field.set candidato[:Email]
         programming_languages_field.set candidato[:Linguagens]
-        radio_age_second_range.click
+        choose_age_interval(candidato[:Idade])
         select_experience.select(candidato[:Experiência])
         select_interest.select(candidato[:Interesse])
-        improve_skill_radio_all.click
-    end    
+        choose_skill_to_improve(candidato[:Skill])
+    end
+    
+    def send_form()
+        send_button.click()
+    end
+
+    def choose_age_interval(age)
+        case age
+        when "18-30"
+            radio_age_first_range.click
+        when "31-49"
+            radio_age_second_range.click
+        when "49+"
+            radio_age_third_range.click
+        else
+            "Incorrect option"
+        end 
+    end
+
+    def choose_skill_to_improve(skill)
+        case skill
+        when "Tecnico"
+            improve_skill_radio_tech.click
+        when "Negocio"
+            improve_skill_radio_business.click
+        when "Comunicacao"
+            improve_skill_radio_communication.click
+        when "Lideranca"
+            improve_skill_radio_leadership.click
+        when "Todas as anteriores"
+            improve_skill_radio_all.click
+        else
+            "Incorrect option"
+        end 
+    end
 
  end
