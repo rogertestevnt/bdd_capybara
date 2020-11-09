@@ -9,4 +9,16 @@
 
 class HomePage < SitePrism::Page
     element :link_qa, 'li#menu-item-226'
+    element :link_blog, 'li#menu-item-139'
+
+    def go_to_link(link_name)
+        case link_name
+        when "Pesquisa - QA"
+            link_qa.click
+        when "BLOG"
+            link_blog.click
+        else
+            "Incorrect option"
+        end
+    end
 end

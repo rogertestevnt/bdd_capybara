@@ -10,18 +10,16 @@ require 'json'
       @pesquisa_page=PesquisaPage.new
       # Using a json file as the data source for providing the info required for running the scenario
       # This is a better approach instead of having hard coded data (unless the data comes from the feature specification)
-      file = File.read('./features/support/candidato.json')
+      file = File.read('./resources/candidato.json')
       @candidato = JSON.parse(file)
    end
 
 
    After do |scenario|
-
-    @helper = Helper.new
-    @name = scenario.name.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/, '')
-    @helper.take_screenshot(@name, 'screenshots/test_failed') if scenario.failed?
-    unless @helper.take_screenshot(@name, 'screenshots/test_passed')
-        
+      @helper = Helper.new
+      @name = scenario.name.gsub(/([_@#!%()\-=;><,{}\~\[\]\.\/\?\"\*\^\$\+\-]+)/, '')
+      @helper.take_screenshot(@name, 'screenshots/test_failed') if scenario.failed?
+      unless @helper.take_screenshot(@name, 'screenshots/test_passed')     
    end
 
 end
