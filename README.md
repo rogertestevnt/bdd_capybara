@@ -1,5 +1,5 @@
 # bdd_capybara
-Code sample for web automation testing using cucumber, capybara and ruby
+Code sample for web automation testing using Cucumber, Capybara and Ruby
 
 Please follow the steps below for running the sample feature:
 
@@ -12,7 +12,7 @@ https://github.com/rogertestevnt/bdd_capybara.git
 
 Example using git: `git clone` https://github.com/rogertestevnt/bdd_capybara.git
 
-## Checkout one of two following branches:
+## Checkout one of the two following branches:
 
 **data_table**: a Data Table  (for details, please visit https://cucumber.io/docs/gherkin/reference/) was used in the specification in order to provide an example of what kind of data is considered valid
 
