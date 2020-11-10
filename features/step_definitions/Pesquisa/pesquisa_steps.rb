@@ -13,5 +13,5 @@ Quando('eu preencher todos os campos obrigatórios:') do |table|
 end
 
 Então('deve ser direcionado para uma página de sucesso') do
-  expect(page).to have_content("Your form has been successfully submitted.")
+  expect(page).to have_content(PesquisaPage::SUCCESS_MESSAGE)
 end
